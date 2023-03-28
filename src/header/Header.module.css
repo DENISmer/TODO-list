@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.Header{
+    position: absolute;
+    margin-top: 10px;
+    left: 40%;
+    background-color: #909091;
+    border-radius: 10px;
+    transition: all .3s ease;
+    padding: 2px;
+}
+.Header:hover{
+    background-color: #444445;
+    color: #909091;
+    padding: 8px;
+    left: 39.6%;
+}
+.Header:focus{
+
+}
+.Header>h1{
+    font-family: 'Nunito', sans-serif;
+}
