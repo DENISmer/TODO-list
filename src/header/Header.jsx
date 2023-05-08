@@ -14,11 +14,14 @@ export function Header(){
     }
     const addNewLi = (text) =>{
         if(text !== undefined){
-            localData.push({txt: text,value: text})
+            li.push(text)
+            setIstActive(!isActive)
         }
-        setLi(localData)
-        console.log(localData)
 
+        console.log(li)
+    }
+    const deleteLi = (value) => {
+        li.pop()
     }
     const UpdateToDoValue = (value) =>{
         setIstActive(!value)
@@ -29,12 +32,9 @@ export function Header(){
             <h1>Click to add new</h1>
 
         </div>
-            <div>
-                {li.map((li,index)=>(
-                    <List key={index} value={li.txt} />
-                ))}
-            </div>
             <ModalWindow isActive={isActive} isActivepdate={() => handle} addNewLi={addNewLi}/>
+        {!isActive && <List value={li} delete={() =>deleteLi}/>}
+
         </>
     );
 }

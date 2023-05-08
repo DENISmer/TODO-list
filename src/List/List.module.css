@@ -1,0 +1,11 @@
+.mainList{
+    position: absolute;
+    z-index: 3;
+    top: 90px;
+    left: 30vw;
+}
+.forLi{
+    display: block;
+    text-align: justify;
+    width: 20px;
+}
