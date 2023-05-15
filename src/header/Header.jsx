@@ -13,7 +13,7 @@ export function Header(){
         console.log(isActive)
     }
     const addNewLi = (text) =>{
-        if(text !== undefined){
+        if(text !== undefined && text.length > 1){
             li.push(text)
             setIstActive(!isActive)
         }
@@ -21,7 +21,12 @@ export function Header(){
         console.log(li)
     }
     const deleteLi = (value) => {
-        li.pop()
+        let localLiArr = [...li];
+        if(value !== -1){
+            console.log(localLiArr)
+            localLiArr.splice(value,1);
+            setLi(localLiArr)
+        }
     }
     const UpdateToDoValue = (value) =>{
         setIstActive(!value)
@@ -33,7 +38,7 @@ export function Header(){
 
         </div>
             <ModalWindow isActive={isActive} isActivepdate={() => handle} addNewLi={addNewLi}/>
-        {!isActive && <List value={li} delete={() =>deleteLi}/>}
+        {!isActive && <List value={li} delete={deleteLi}/>}
 
         </>
     );

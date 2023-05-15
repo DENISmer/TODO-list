@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 .mainList{
     position: absolute;
     z-index: 3;
@@ -5,7 +7,19 @@
     left: 30vw;
 }
 .forLi{
-    display: block;
+    display: flex;
     text-align: justify;
-    width: 20px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+.closeButtonForLi{
+    background-color: white;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+.closeButtonForLi:hover{
+    background-color: #909091;
 }
