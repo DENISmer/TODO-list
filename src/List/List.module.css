@@ -9,8 +9,14 @@
 .forLi{
     display: flex;
     text-align: justify;
-    width: 500px;
+    max-width: 500px;
     margin-bottom: 10px;
+}
+.forLi>span{
+    position: relative;
+    width: 100px;
+    float: left;
+    right: 100px;
 }
 .closeButtonForLi{
     background-color: white;

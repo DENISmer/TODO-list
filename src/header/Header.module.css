@@ -1,19 +1,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 .Header{
+    font-size: 30px;
     position: absolute;
     margin-top: 10px;
-    left: 40%;
+    left: 42%;
     background-color: #909091;
     border-radius: 10px;
     transition: all .3s ease;
-    padding: 2px;
+    padding: 5px;
 }
+
 .Header:hover{
     background-color: #444445;
     color: #909091;
-    padding: 8px;
-    left: 39.6%;
+    padding-top: 5px;
+    /*left: 39.6%;*/
+}
+@media screen and (width < 1000px){
+    .Header{
+        position: absolute;
+        margin-top: 10px;
+        left: 37%;
+        background-color: #909091;
+        border-radius: 10px;
+        transition: all .3s ease;
+        padding: 5px;
+    }
+
+}
+@media screen and (width < 800px){
+    .Header{
+        position: absolute;
+        margin-top: 10px;
+        left: 33%;
+        background-color: #909091;
+        border-radius: 10px;
+        transition: all .3s ease;
+        padding: 5px;
+    }
+    
+}
+@media screen and (400px < width < 500px){
+    .Header{
+        position: absolute;
+        margin-top: 10px;
+        left: 25%;
+        background-color: #909091;
+        border-radius: 10px;
+        transition: all .3s ease;
+        padding: 3px;
+    }
+
+}
+@media screen and (300px < width < 400px){
+    .Header{
+        position: absolute;
+        margin-top: 10px;
+        left: 20%;
+        background-color: #909091;
+        border-radius: 10px;
+        transition: all .3s ease;
+        padding: 3px;
+    }
+    .Header:hover{
+        background-color: #444445;
+        color: #909091;
+        padding-top: 5px;
+        /*left: 39.6%;*/
+    }
+}
+@media screen and (300px < width < 350px){
+    .Header{
+        position: absolute;
+        margin-top: 10px;
+        left: 15%;
+        background-color: #909091;
+        border-radius: 10px;
+        transition: all .3s ease;
+        padding: 3px;
+    }
+    .Header:hover{
+        background-color: #444445;
+        color: #909091;
+        padding-top: 5px;
+        /*left: 39.6%;*/
+    }
 }
 .Header:focus{
 

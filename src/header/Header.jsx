@@ -34,8 +34,7 @@ export function Header(){
     }
     return(<>
         <div className={HeaderStyle.Header} onClick={() => handle(isActive)}>
-            <h1>Click to add new</h1>
-
+            Click to add new
         </div>
             <ModalWindow isActive={isActive} isActivepdate={() => handle} addNewLi={addNewLi}/>
         {!isActive && <List value={li} delete={deleteLi}/>}

@@ -8,7 +8,7 @@ import closeButton from '../icons/closeButton/1x/twotone_close_black_24dp.png'
              <ol>
                  {props.value.map((text, index)=> (
                      <li className={list.forLi} key={index}>
-                         {`${index + 1}) ${text}`}
+                         <span>{`${index + 1}) ${text}`}</span>
                          <div className={list.closeButtonForLi} onClick={() => props.delete(index)}><img src={closeButton}/> </div>
                      </li>
                  ))}

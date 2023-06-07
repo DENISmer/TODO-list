@@ -7,10 +7,11 @@
     width: 100vw;
     overflow: hidden;
 }
+
 .Window{
-    position: absolute;
-    top: 150px;
-    left: 36%;
+    position: relative;
+    top: 10vh;
+    left: 39%;
     background-color: #282c34;
     border-radius: 10px;
     min-width: 320px;
@@ -19,6 +20,169 @@
     height: auto;
     padding: 5px;
 }
+.Window>textarea{
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    line-height:1.5;
+    resize: none;
+    min-width: 310px;
+    height: 115px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+    outline: none;
+}
+@media screen and (width < 1000px){
+    .Window{
+        position: absolute;
+        top: 10vh;
+        left: 32%;
+        background-color: #282c34;
+        border-radius: 10px;
+        min-width: 320px;
+        max-width: 320px;
+        min-height: 190px;
+        height: auto;
+        padding: 5px;
+    }
+    .Window>textarea{
+        box-shadow:0 4px 6px rgba(0,0,0,0.1);
+        line-height:1.5;
+        resize: none;
+        margin-left: 2px;
+        min-width: 295px;
+        height: 115px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+        overflow: hidden;
+        outline: none;
+    }
+
+}
+@media screen and (500px < width < 800px){
+    .Window{
+        position: absolute;
+        top: 10vh;
+        left: 28%;
+        background-color: #282c34;
+        border-radius: 10px;
+        min-width: 320px;
+        max-width: 320px;
+        min-height: 190px;
+        height: auto;
+        padding: 5px;
+    }
+
+}
+@media screen and (400px < width < 500px){
+    .Window{
+        position: absolute;
+        top: 10vh;
+        left: 17%;
+        background-color: #282c34;
+        border-radius: 10px;
+        min-width: 320px;
+        max-width: 320px;
+        min-height: 190px;
+        height: auto;
+        padding: 5px;
+    }
+    .Window>textarea{
+        box-shadow:0 4px 6px rgba(0,0,0,0.1);
+        line-height:1.5;
+        resize: none;
+        margin-left: 2px;
+        min-width: 305px;
+        max-width: 350px;
+        height: 115px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+        overflow: hidden;
+        outline: none;
+    }
+
+}
+@media screen and (350px < width < 400px){
+    .Window{
+        position: absolute;
+        top: 10vh;
+        left: 7%;
+        background-color: #282c34;
+        border-radius: 10px;
+        min-width: 320px;
+        max-width: 320px;
+        min-height: 190px;
+        height: auto;
+        padding: 5px;
+    }
+    .Window>textarea{
+        box-shadow:0 4px 6px rgba(0,0,0,0.1);
+        line-height:1.5;
+        resize: none;
+        margin-left: 2px;
+        min-width: 297px;
+        max-width: 300px;
+        height: 115px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+        overflow: hidden;
+        outline: none;
+    }
+
+}
+@media screen and (300px < width < 350px){
+    .Window{
+        position: absolute;
+        top: 10vh;
+        left: 8%;
+        background-color: #282c34;
+        border-radius: 10px;
+        min-width: 120px;
+        max-width: 260px;
+        min-height: 190px;
+        height: auto;
+        padding: 5px;
+    }
+    .Window>textarea{
+        box-shadow:0 4px 6px rgba(0,0,0,0.1);
+        line-height:1.5;
+        resize: none;
+        min-width: 100px;
+        max-width: 350px;
+        height: 115px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Nunito', sans-serif;
+        overflow: hidden;
+        outline: none;
+    }
+    .Window>h3{
+        color: white;
+        position: relative;
+        left: -15%;
+        font-family: 'Nunito', sans-serif;
+    }
+    .CloseButton{
+        background-color: #909091;
+        position: relative;
+        margin-left: -80px;
+        top: -60px;
+        width: 24px;
+        height: 24px;
+        border-radius: 10px;
+        transition: all .3s ease;
+    }
+
+}
+
 .Window>h3{
     color: white;
     position: relative;
@@ -38,19 +202,7 @@
 .CloseButton:hover{
     background-color: white;
 }
-.Window>textarea{
-    box-shadow:0 4px 6px rgba(0,0,0,0.1);
-    line-height:1.5;
-    resize: none;
-    min-width: 315px;
-    height: 115px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Nunito', sans-serif;
-    overflow: hidden;
-    outline: none;
-}
+
 .ConfirmButton{
 
 }
