@@ -1,31 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 .mainList{
-    position: absolute;
+    position: relative;
+    margin-left: 20vw;
     z-index: 3;
     top: 90px;
-    left: 30vw;
+    width: 900px;
+    overflow-x: hidden;
+    height: auto;
+}
+.blockText{
+    word-wrap: break-word;
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+}
+.onChecked{
+    text-decoration: line-through;
+    word-wrap: break-word;
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
 }
 .forLi{
-    display: flex;
-    text-align: justify;
+    width: 300px;
     max-width: 500px;
+    height: auto;
     margin-bottom: 10px;
+    overflow-x: hidden;
 }
 .forLi>span{
     position: relative;
-    width: 100px;
+    width: 1000px;
     float: left;
     right: 100px;
 }
 .closeButtonForLi{
     background-color: white;
-    position: relative;
-    width: 24px;
-    height: 24px;
+    margin-bottom: -4px;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
     border-radius: 10px;
     transition: all .3s ease;
 }
 .closeButtonForLi:hover{
     background-color: #909091;
+}
+@media screen and (1050px < width < 1150px) {
+    .mainList{
+        position: relative;
+        margin-left: 18vw;
+        z-index: 3;
+        top: 90px;
+        display: inline-block;
+    }
+    .blockText{
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px
+    }
+}
+@media screen and (900px < width < 1080px) {
+    .mainList{
+        position: relative;
+        margin-left: 15vw;
+        z-index: 3;
+        top: 90px;
+        display: inline-block;
+        width: 730px;
+    }
+    .blockText{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+}
+@media screen and (700px < width < 920px) {
+    .mainList{
+        position: relative;
+        margin-left: 15vw;
+        z-index: 3;
+        top: 90px;
+        display: inline-block;
+        width: 550px;
+    }
+    .blockText{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+}
+@media screen and (500px < width < 710px) {
+    .mainList{
+        position: relative;
+        margin-left: 12vw;
+        z-index: 3;
+        top: 90px;
+        display: inline-block;
+        width: 415px;
+    }
+    .blockText{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+}
+@media screen and (300px < width < 510px) {
+    .mainList{
+        position: relative;
+        margin-left: 10vw;
+        z-index: 3;
+        top: 90px;
+        display: inline-block;
+        width: 305px;
+    }
+    .blockText{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
 }

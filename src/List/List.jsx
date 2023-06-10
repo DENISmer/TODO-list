@@ -1,18 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import list from './List.module.css'
 import closeButton from '../icons/closeButton/1x/twotone_close_black_24dp.png'
 
- export function List(props){
+export function List(props){
+
+    const [checked,setChecked] = useState([]);
+
+
      return (<>
          <div className={list.mainList}>
-             <ol>
                  {props.value.map((text, index)=> (
-                     <li className={list.forLi} key={index}>
-                         <span>{`${index + 1}) ${text}`}</span>
-                         <div className={list.closeButtonForLi} onClick={() => props.delete(index)}><img src={closeButton}/> </div>
-                     </li>
+                     <div className={list.blockText} id={text}>
+                         <br/>
+                         <img className={list.closeButtonForLi} onClick={() => {
+                             props.delete(index)
+                         }} src={closeButton}/>
+                         <input id={"checkbox"+text} type={"checkbox"} checked={props.value[index].checked} onChange={()=> props.change(text.text,index,text.checked)}/>
+
+                         <div className={text.checked ? list.onChecked : null}>{`${index + 1}) ${text.text}`}</div>
+                     </div>
                  ))}
-             </ol>
          </div>
          </>)
- }
+}

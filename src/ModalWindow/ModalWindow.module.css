@@ -30,7 +30,7 @@
     font-size: 18px;
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
     outline: none;
 }
 @media screen and (width < 1000px){
@@ -196,7 +196,7 @@
     top: -60px;
     width: 24px;
     height: 24px;
-    border-radius: 10px;
+    border-radius: 12px;
     transition: all .3s ease;
 }
 .CloseButton:hover{
@@ -204,5 +204,27 @@
 }
 
 .ConfirmButton{
-
+    background-color: rgba(127, 255, 212, 0.38);
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: azure;
+    transition: all .3s ease;
+    height: 25px;
+}
+.ConfirmButton:hover{
+    background-color: #01d37b;
+}
+.ClearAllButton{
+    float: right;
+    background-color: rgba(211, 0, 56, 0.38);
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: azure;
+    transition: all .3s ease;
+    height: 25px;
+}
+.ClearAllButton:hover{
+    background-color: #d30038;
 }
