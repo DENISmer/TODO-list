@@ -28,12 +28,14 @@ export function Header(){
 
 
     const deleteLi = (value) => {
-        let localLiArr = [...li];
-        if(value !== -1){
+        if(window.confirm(`Удалить задачу № ${value + 1} ? Вы уверены?`)){
+            let localLiArr = [...li];
+            if(value !== -1){
 
-            localLiArr.splice(value,1);
-            setLi(localLiArr);
+                localLiArr.splice(value,1);
+                setLi(localLiArr);
 
+            }
         }
     }
 
