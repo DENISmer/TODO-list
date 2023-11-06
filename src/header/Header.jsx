@@ -56,7 +56,7 @@ export function Header(){
             Click to add new
         </div>
             <ModalWindow isActive={isActive}
-                         isActivepdate={() => handle}
+                         isActiveupdate={() => handle}
                          addNewLi={addNewLi}
             />
 

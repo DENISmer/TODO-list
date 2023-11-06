@@ -10,7 +10,7 @@ export function List(props){
      return (<>
          <div className={list.mainList}>
                  {props.value.map((text, index)=> (
-                     <div className={list.blockText} id={text}>
+                     <div className={list.blockText} id={text} key={index}>
                          <br/>
                          <img className={list.closeButtonForLi} onClick={() => {
                              props.delete(index)
